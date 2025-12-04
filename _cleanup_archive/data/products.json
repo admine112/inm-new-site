@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Иммунофлам",
+        "slug": "immunoflam",
+        "description": "Натуральный комплекс для укрепления иммунной системы",
+        "price": 2800,
+        "image": "/images/immunoflam.png",
+        "category": "supplements",
+        "inStock": true
+    },
+    {
+        "id": 2,
+        "name": "Иммунофлам Форте",
+        "slug": "immunoflam-forte",
+        "description": "Усиленная формула для активной защиты",
+        "price": 3200,
+        "image": "/images/immunoflam-forte.png",
+        "category": "supplements",
+        "inStock": true
+    }
+]

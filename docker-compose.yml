@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  web:
+    image: php:7.4-apache
+    container_name: inmunoflam_web
+    ports:
+      - "8090:80"  # Змінено на 8090
+    volumes:
+      - ./www/www:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    command: >
+      bash -c "docker-php-ext-install mysqli pdo pdo_mysql
+      && a2enmod rewrite
+      && apache2-foreground"
+
+  db:
+    image: mysql:5.7
+    container_name: inmunoflam_db
+    ports:
+      - "33060:3306"  # Використовуємо порт 33060
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: is501201_inm
+      MYSQL_USER: is501201_inm
+      MYSQL_PASSWORD: "(!keSB72a5"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./is501201_inm.2025-11-20.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: inmunoflam_pma
+    ports:
+      - "8091:80"  # Змінено на 8091
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    depends_on:
+      - db
+
+volumes:
+  db_data:
