@@ -15,7 +15,8 @@ export function Header() {
       setTimeout(() => setShowArrow(false), 1500)
     })
     return unsubscribe
-  }, [onItemAdded])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
