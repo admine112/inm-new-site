@@ -19,24 +19,6 @@ export default async function Shop() {
         </div>
       </section>
 
-      {/* Filter Section */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
-        <div className="flex items-center gap-4 pb-8 border-b border-gray-100">
-          <button className="bg-emerald-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition-colors">
-            Все товары
-          </button>
-          <button className="bg-white text-gray-700 px-6 py-2 rounded-lg text-sm font-medium border border-gray-200 hover:bg-gray-50 transition-colors">
-            Витамины
-          </button>
-          <button className="bg-white text-gray-700 px-6 py-2 rounded-lg text-sm font-medium border border-gray-200 hover:bg-gray-50 transition-colors">
-            Добавки
-          </button>
-          <button className="bg-white text-gray-700 px-6 py-2 rounded-lg text-sm font-medium border border-gray-200 hover:bg-gray-50 transition-colors">
-            Травяные чаи
-          </button>
-        </div>
-      </section>
-
       {/* Products Grid */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-3 gap-8">
