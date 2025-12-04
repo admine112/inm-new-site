@@ -3,12 +3,22 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useCart } from "@/lib/cart-context"
+import { useState, useEffect } from "react"
 
 export function Header() {
-  const { totalItems } = useCart()
+  const { totalItems, onItemAdded } = useCart()
+  const [showArrow, setShowArrow] = useState(false)
+
+  useEffect(() => {
+    const unsubscribe = onItemAdded(() => {
+      setShowArrow(true)
+      setTimeout(() => setShowArrow(false), 1500)
+    })
+    return unsubscribe
+  }, [onItemAdded])
 
   return (
-    <header className="bg-white border-b border-gray-100 shadow-md">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -41,6 +51,15 @@ export function Header() {
               <span className="absolute -top-2 -right-2 bg-emerald-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                 {totalItems}
               </span>
+            )}
+
+            {/* Анимированная стрелка под корзиной */}
+            {showArrow && (
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" strokeWidth="3">
+                  <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+              </div>
             )}
           </Link>
         </nav>
