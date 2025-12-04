@@ -41,8 +41,17 @@ export function Footer() {
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">Контакты</h4>
-            <p className="text-gray-600 text-sm">info@immunoflam.ru</p>
-            <p className="text-gray-600 text-sm">+7 (800) 555-35-35</p>
+            <div className="space-y-2 text-sm text-gray-600">
+              <p>Киев, Оболонская пл., 5</p>
+              <p className="font-semibold text-gray-900 mt-3">Телефоны:</p>
+              <p>(044) 578-17-48</p>
+              <p>(063) 578-17-48</p>
+              <p>(067) 233-74-80</p>
+              <p className="font-semibold text-gray-900 mt-3">Email:</p>
+              <p>lda7@ukr.net</p>
+              <p className="font-semibold text-gray-900 mt-3">Мессенджеры:</p>
+              <p>+380 50 857 25 64</p>
+            </div>
           </div>
         </div>
         <div className="border-t border-gray-200 pt-8 text-center text-gray-500 text-sm">
