@@ -53,31 +53,32 @@ export default function Articles() {
 
       {/* Featured Article */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="card p-0 overflow-hidden h-80">
-          <div className="flex h-full">
-            <div className="flex-1 bg-emerald-50">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Featured article"
-                width={500}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex-1 p-12 flex flex-col justify-center">
-              <p className="text-emerald-600 font-semibold mb-2">РЕКОМЕНДУЕМ</p>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Как правильно укреплять иммунитет осенью</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                С приходом осени организм нуждается в особой защите. Узнайте, какие витамины и микроэлементы помогут вам
-                избежать сезонных простуд.
-              </p>
-              <div className="flex items-center gap-4 text-sm text-gray-500">
-                <span>15 ноября 2024</span>
-                <span>5 мин чтения</span>
+        <Link href="/articles/t-cell-immunity">
+          <div className="card p-0 overflow-hidden h-80 cursor-pointer hover:shadow-xl transition-all">
+            <div className="flex h-full">
+              <div className="flex-1 bg-emerald-50">
+                <Image
+                  src="/placeholder.svg?height=500&width=500"
+                  alt="Featured article"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1 p-12 flex flex-col justify-center">
+                <p className="text-emerald-600 font-semibold mb-2">РЕКОМЕНДУЕМ</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Хотите жить дольше? Укрепляйте Т-клеточный иммунитет!</h2>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Научные исследования доказали, что от численности иммунных клеток Т-лимфоцитов зависит, как наш организм справится с вирусом. Узнайте, как укрепить клеточный иммунитет.
+                </p>
+                <div className="flex items-center gap-4 text-sm text-gray-500">
+                  <span>Актуальная статья</span>
+                  <span>5 мин чтения</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </section>
 
       {/* Articles Grid */}
