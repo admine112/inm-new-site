@@ -56,8 +56,8 @@ export function Header() {
 
             {/* Анимированная стрелка под корзиной */}
             {showArrow && (
-              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" strokeWidth="3">
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5))' }}>
+                <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#d19e06" strokeWidth="2.5">
                   <path d="M12 5v14M19 12l-7 7-7-7" />
                 </svg>
               </div>
