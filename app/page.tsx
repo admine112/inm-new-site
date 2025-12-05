@@ -106,7 +106,7 @@ export default async function Home() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Популярные товары</h2>
                 <p className="text-gray-600 mb-12 text-lg">Начните с лучших продаж, которые полюбили наши клиенты</p>
 
-                <div className="grid grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                     {featuredProducts.map((product) => (
                         <div
                             key={product.id}

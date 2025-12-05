@@ -54,9 +54,9 @@ export default function Articles() {
       {/* Featured Article */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <Link href="/articles/t-cell-immunity">
-          <div className="card p-0 overflow-hidden h-80 cursor-pointer hover:shadow-xl transition-all">
-            <div className="flex h-full">
-              <div className="flex-1 bg-emerald-50">
+          <div className="card p-0 overflow-hidden h-auto md:h-80 cursor-pointer hover:shadow-xl transition-all">
+            <div className="flex flex-col md:flex-row h-full">
+              <div className="flex-1 bg-emerald-50 h-64 md:h-auto">
                 <Image
                   src="/placeholder.svg?height=500&width=500"
                   alt="Featured article"
@@ -65,7 +65,7 @@ export default function Articles() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 p-12 flex flex-col justify-center">
+              <div className="flex-1 p-8 md:p-12 flex flex-col justify-center">
                 <p className="text-emerald-600 font-semibold mb-2">РЕКОМЕНДУЕМ</p>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Хотите жить дольше? Укрепляйте Т-клеточный иммунитет!</h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -85,7 +85,7 @@ export default function Articles() {
       <section className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Последние публикации</h2>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {articles.map((article) => (
             <Link key={article.id} href={`/articles/${article.slug}`}>
               <div className="card cursor-pointer hover:shadow-lg transition-all">

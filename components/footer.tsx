@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-100 mt-20">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-semibold text-emerald-700 mb-4">Иммунофлам</h3>
             <p className="text-gray-600 text-sm">Натуральная поддержка вашего иммунитета</p>
