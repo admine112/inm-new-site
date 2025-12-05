@@ -13,7 +13,7 @@ const articles = [
     readTime: "5 мин",
     category: "Иммунитет",
     slug: "t-cell-immunity",
-    image: "/article-t-cells.jpg",
+    image: "/article-sick-new.png",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const articles = [
     readTime: "4 мин",
     category: "Наука",
     slug: "t-b-lymphocytes",
-    image: "/article-lymphocytes.jpg",
+    image: "/article-science-new.png",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const articles = [
     readTime: "3 мин",
     category: "Препараты",
     slug: "inmunoflam-shield",
-    image: "/article-shield.jpg",
+    image: "/article-shield-new.png",
   },
 ]
 
@@ -61,7 +61,7 @@ export default function Articles() {
             <div className="flex flex-col md:flex-row h-full">
               <div className="flex-1 bg-emerald-50 h-64 md:h-auto">
                 <Image
-                  src="/article-t-cells.jpg"
+                  src="/article-sick-new.png"
                   alt="Featured article"
                   width={500}
                   height={500}

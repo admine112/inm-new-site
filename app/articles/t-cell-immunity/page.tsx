@@ -19,7 +19,7 @@ export default function Article1() {
 
                 <div className="mb-8 rounded-xl overflow-hidden">
                     <Image
-                        src="/article-t-cells.jpg"
+                        src="/article-sick-new.png"
                         alt="Т-клеточный иммунитет"
                         width={800}
                         height={400}

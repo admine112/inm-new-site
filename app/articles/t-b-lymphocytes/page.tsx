@@ -19,7 +19,7 @@ export default function Article2() {
 
                 <div className="mb-8 rounded-xl overflow-hidden">
                     <Image
-                        src="/article-lymphocytes.jpg"
+                        src="/article-science-new.png"
                         alt="Т-лимфоциты и В-лимфоциты"
                         width={800}
                         height={400}

@@ -19,7 +19,7 @@ export default function Article3() {
 
                 <div className="mb-8 rounded-xl overflow-hidden">
                     <Image
-                        src="/article-shield.jpg"
+                        src="/article-shield-new.png"
                         alt="Инмунофлам - щит иммунитета"
                         width={800}
                         height={400}
