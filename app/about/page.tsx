@@ -50,50 +50,32 @@ export default function About() {
 
       {/* Values Section */}
       <section className="bg-emerald-50 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Наши ценности</h2>
-
-          <div className="grid grid-cols-3 gap-8">
-            {[
-              {
-                title: "Чистота и честность",
-                description:
-                  "Мы честны о составе, действии и ограничениях наших продуктов. Никакого маркетингового обмана.",
               },
-              {
-                title: "Научный подход",
-                description: "Каждый ингредиент выбран на основе научных исследований. Все продукты имеют сертификаты.",
+        {
+          title: "Доступность",
+        description:
+        "Здоровье не должно быть привилегией. Мы предлагаем премиум качество по справедливым ценам.",
               },
-              {
-                title: "Натуральность",
-                description:
-                  "Только растительные компоненты высочайшего качества, без синтетических добавок и консервантов.",
+        {
+          title: "Забота о людях",
+        description: "Мы слышим наших клиентов, совершенствуем продукты и создаём сообщество здоровых людей.",
               },
-              {
-                title: "Доступность",
-                description:
-                  "Здоровье не должно быть привилегией. Мы предлагаем премиум качество по справедливым ценам.",
-              },
-              {
-                title: "Забота о людях",
-                description: "Мы слышим наших клиентов, совершенствуем продукты и создаём сообщество здоровых людей.",
-              },
-              {
-                title: "Экологичность",
-                description: "Заботимся о природе: используем переработанную упаковку и поддерживаем экопроекты.",
+        {
+          title: "Экологичность",
+        description: "Заботимся о природе: используем переработанную упаковку и поддерживаем экопроекты.",
               },
             ].map((value, idx) => (
-              <div key={idx} className="card">
-                <h3 className="text-lg font-semibold text-emerald-700 mb-3">{value.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
+        <div key={idx} className="card">
+          <h3 className="text-lg font-semibold text-emerald-700 mb-3">{value.title}</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
         </div>
-      </section>
+            ))}
+    </div>
+        </div >
+      </section >
 
-      {/* Team Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+    {/* Team Section */ }
+    < section className = "max-w-7xl mx-auto px-6 py-20" >
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Наша команда</h2>
         <p className="text-gray-600 text-lg mb-12">Единомышленники, объединённые верой в силу природы</p>
 
@@ -135,29 +117,29 @@ export default function About() {
             </div>
           ))}
         </div>
-      </section>
+      </section >
 
-      {/* Stats Section */}
-      <section className="bg-emerald-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-4 gap-8 text-center">
-            {[
-              { number: "100K+", label: "Довольных клиентов" },
-              { number: "5+", label: "Лет разработок" },
-              { number: "6", label: "Эффективных продуктов" },
-              { number: "99%", label: "Положительных отзывов" },
-            ].map((stat, idx) => (
-              <div key={idx}>
-                <p className="text-5xl font-bold mb-2">{stat.number}</p>
-                <p className="text-emerald-100">{stat.label}</p>
-              </div>
-            ))}
-          </div>
+    {/* Stats Section */ }
+    < section className = "bg-emerald-600 text-white py-16" >
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-4 gap-8 text-center">
+          {[
+            { number: "100K+", label: "Довольных клиентов" },
+            { number: "5+", label: "Лет разработок" },
+            { number: "6", label: "Эффективных продуктов" },
+            { number: "99%", label: "Положительных отзывов" },
+          ].map((stat, idx) => (
+            <div key={idx}>
+              <p className="text-5xl font-bold mb-2">{stat.number}</p>
+              <p className="text-emerald-100">{stat.label}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+      </section >
 
-      {/* Contact Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+    {/* Contact Section */ }
+    < section className = "max-w-7xl mx-auto px-6 py-20" >
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Свяжитесь с нами</h2>
         <p className="text-gray-600 text-lg mb-8">Есть вопросы? Мы здесь, чтобы помочь</p>
 
@@ -210,9 +192,9 @@ export default function About() {
             </button>
           </form>
         </div>
-      </section>
+      </section >
 
-      <Footer />
-    </div>
+    <Footer />
+    </div >
   )
 }

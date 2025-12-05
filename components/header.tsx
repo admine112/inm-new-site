@@ -30,17 +30,20 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
+          <Link href="/" className="text-gray-700 hover:text-emerald-600 font-medium">
             Главная
           </Link>
-          <Link href="/shop" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
+          <Link href="/shop" className="text-gray-700 hover:text-emerald-600 font-medium">
             Магазин
           </Link>
-          <Link href="/articles" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
+          <Link href="/articles" className="text-gray-700 hover:text-emerald-600 font-medium">
             Статьи
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
-            О нас
+          <Link href="/about" className="text-gray-700 hover:text-emerald-600 font-medium">
+            Что такое Инмунофлам
+          </Link>
+          <Link href="/contacts" className="text-gray-700 hover:text-emerald-600 font-medium">
+            Где нас найти
           </Link>
 
           {/* Cart Icon */}
