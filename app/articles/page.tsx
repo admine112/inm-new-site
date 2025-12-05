@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
+import { Newsletter } from "@/components/Newsletter"
 
 const articles = [
   {
@@ -128,22 +129,8 @@ export default function Articles() {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-emerald-50 border-t border-emerald-100 py-16">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">Не пропустите новые статьи</h2>
-          <p className="text-gray-600 mb-8">
-            Подпишитесь на нашу рассылку и получайте полезные советы о здоровье прямо на почту
-          </p>
-          <div className="flex gap-3">
-            <input
-              type="email"
-              placeholder="Ваш email"
-              className="flex-1 px-6 py-3 rounded-lg border border-emerald-200 bg-white text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            />
-            <button className="btn-primary">Подписаться</button>
-          </div>
-        </div>
-      </section>
+      {/* Newsletter */}
+      <Newsletter />
 
       <Footer />
     </div>
