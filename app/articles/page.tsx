@@ -8,31 +8,34 @@ const articles = [
     id: 1,
     title: "Хотите жить дольше? Укрепляйте Т-клеточный иммунитет!",
     excerpt:
-      "Научные исследования доказали, что от численности иммунных клеток Т-лимфоцитов зависит, как наш организм справится с вирусом. Узнайте, как укрепить клеточный иммунитет.",
-    date: "Актуальная статья",
-    readTime: "5 мин чтения",
+      "Научные исследования доказали, что от численности иммунных клеток Т-лимфоцитов зависит, как наш организм справится с вирусом.",
+    date: "15 ноября 2024",
+    readTime: "5 мин",
     category: "Иммунитет",
     slug: "t-cell-immunity",
+    image: "/article-t-cells.jpg",
   },
   {
     id: 2,
     title: "Главные защитники организма - Т-лимфоциты и В-лимфоциты",
     excerpt:
-      "Чем сильнее Т-клеточный иммунитет, тем выше шанс оставаться здоровыми. Узнайте о роли Т и В лимфоцитов в защите организма.",
-    date: "Актуальная статья",
-    readTime: "4 мин чтения",
+      "Т-лимфоциты и В-лимфоциты – главные защитники нашего организма. Что вы знаете о них?",
+    date: "10 ноября 2024",
+    readTime: "4 мин",
     category: "Наука",
     slug: "t-b-lymphocytes",
+    image: "/article-lymphocytes.jpg",
   },
   {
     id: 3,
     title: "Инмунофлам - надежный щит иммунной системы",
     excerpt:
-      "Инмунофлам способен стимулировать выработку белка интерферона и быстро укреплять Т-клеточный иммунитет. Узнайте о механизме действия препарата.",
-    date: "Актуальная статья",
-    readTime: "6 мин чтения",
+      "Инмунофлам – это натуральный препарат, который помогает укрепить иммунитет и защитить организм от вирусов.",
+    date: "5 ноября 2024",
+    readTime: "3 мин",
     category: "Препараты",
     slug: "inmunoflam-shield",
+    image: "/article-shield.jpg",
   },
 ]
 
@@ -58,7 +61,7 @@ export default function Articles() {
             <div className="flex flex-col md:flex-row h-full">
               <div className="flex-1 bg-emerald-50 h-64 md:h-auto">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/article-t-cells.jpg"
                   alt="Featured article"
                   width={500}
                   height={500}
@@ -92,7 +95,7 @@ export default function Articles() {
                 {/* Article Image */}
                 <div className="bg-emerald-50 rounded-lg overflow-hidden mb-6 h-48">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src={article.image}
                     alt={article.title}
                     width={400}
                     height={300}

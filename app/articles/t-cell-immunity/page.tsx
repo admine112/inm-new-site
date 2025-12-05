@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Article1() {
     return (
@@ -15,6 +16,16 @@ export default function Article1() {
                 <h1 className="text-4xl font-bold text-gray-900 mb-6">
                     Хотите жить дольше? Укрепляйте Т-клеточный иммунитет!
                 </h1>
+
+                <div className="mb-8 rounded-xl overflow-hidden">
+                    <Image
+                        src="/article-t-cells.jpg"
+                        alt="Т-клеточный иммунитет"
+                        width={800}
+                        height={400}
+                        className="w-full h-auto object-cover"
+                    />
+                </div>
 
                 <div className="prose prose-lg max-w-none">
                     <p>
